@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required by @cloudflare/next-on-pages
-  // All interactive pages already use 'use client' — no server runtime needed
+  output: "export", // Generates static files in /out — perfect for Cloudflare Pages
 };
 
 export default nextConfig;

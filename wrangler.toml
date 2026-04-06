@@ -1,0 +1,5 @@
+name = "jonax-dev"
+compatibility_date = "2024-09-23"
+
+[assets]
+directory = "./out"

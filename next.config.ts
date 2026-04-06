@@ -1,12 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required for @cloudflare/next-on-pages compatibility
-  experimental: {
-    serverActions: {
-      allowedOrigins: ["*"],
-    },
-  },
+  // Required by @cloudflare/next-on-pages
+  // All interactive pages already use 'use client' — no server runtime needed
 };
 
 export default nextConfig;
